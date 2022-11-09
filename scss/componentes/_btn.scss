@@ -1,0 +1,23 @@
+.btnMio{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    color: black;
+}
+.btnMioOrange{
+    background-color: orange;
+    @extend .btnMio;
+}
+.btnMioPink{
+    background-color: pink;
+    @extend .btnMio;
+}
+.btnMioYellow{
+    background-color: yellow;
+    @extend .btnMio;
+}
+
+
+    

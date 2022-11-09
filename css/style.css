@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: yellow;
+  border: 3px dotted orange;
+  text-align: center;
+  font-weight: bold;
+  height: 40px;
+}
+header p {
+  padding-top: 8px;
+  font-weight: cinzel;
+  font-weight: 400;
+  font-size: 18px;
+}
+footer {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+footer i {
+  font-size: 40px;
+  padding: 30px;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+nav {
+  height: 110px;
+}
+
+.logoImagen {
+  width: 110px;
+}
+
+.divNav {
+  background-color: white;
+  padding-right: 20px;
+}
+
+.imagenPrincipal {
+  width: 100%;
+}
+
+.btnPropio {
+  color: black;
+  border: 1px solid black;
+}
+
+.btnPropio:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.containerMain {
+  max-width: 100%;
+  padding: 0;
+}
+
+.mainPropio {
+  padding-right: 0;
+}
+
+.sectionArgentina {
+  background-color: rgb(122, 39, 199);
+}
+
+.containerArgentina {
+  max-width: 100%;
+  padding: 0;
+}
+
+.rowArgentina {
+  padding-right: 0;
+}
+
+.tituloArgentina {
+  font-size: 50px;
+  padding-top: 100px;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+
+.subtituloArgentina {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
+}
+
+.sectionSuperclasico {
+  padding-top: 100px;
+}
+
+.containerSuperclasico {
+  max-width: 100%;
+  padding: 0;
+}
+
+.tituloSuperclasico {
+  text-align: center;
+  padding: 25px;
+}
+
+.subtituloSuperclasico {
+  text-align: center;
+}
+
+.divIzquierda {
+  padding-right: 0;
+}
+
+.divMedio {
+  background: rgb(0, 23, 218);
+  background: linear-gradient(90deg, rgb(0, 23, 218) 28%, rgb(253, 29, 29) 70%);
+  padding-right: 0;
+}
+
+.divDerecha {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.imgRiver, .imgBoca {
+  width: 100%;
+  height: 100%;
+}
+
+.containerFooter {
+  max-width: 100%;
+}
+
+.tituloFooter {
+  font-weight: 800;
+}
+
+.subtituloFooter {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+/* Sobrenosotros historia */
+.containerSobrenosotros {
+  max-width: 100%;
+}
+
+.tituloSobreNosotros {
+  text-align: center;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 60px;
+}
+
+.subtituloSobreNosotros {
+  font-size: 40px;
+  padding: 60px;
+}
+
+.parrafoSobreNosotros {
+  font-size: 17px;
+  padding: 20px;
+}
+
+/* Imagen inspiradora sobrenosotros */
+.containerImgSobreNosotros {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+
+.imagenSobreNosotros {
+  height: 300px;
+  width: 100%;
+}
+
+.textoImgSobreNosotros {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-family: oswald;
+}
+
+/* Search */
+.form-control-mio:focus {
+  border-color: black;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.562);
+}
+
+.btnContacto {
+  color: black;
+  background-color: grey;
+  border: 1px solid black;
+}
+
+.btnContacto:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+/* Animacion */
+.sectionAnimacion {
+  padding-top: 100px;
+}
+
+.bodyAnimacionPropia {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 30vh;
+  font-family: Courier New, monospace;
+  background: rgb(7, 2, 2);
+  overflow-x: hidden;
+}
+
+.h1Propio {
+  font-size: 3.5vw;
+  position: relative;
+  width: max-content;
+  font-weight: normal;
+  color: white;
+}
+
+.h1Propio::before, .h1Propio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.h1Propio::before {
+  background: rgb(7, 6, 6);
+  animation: write 2.5s steps(25) 0.5s forwards; /* Number of steps */
+  width: 100%;
+}
+
+.h1Propio::after {
+  opacity: 1;
+  width: 0.15em;
+  background: black;
+  animation: write 2.5s steps(25) 0.5s forwards, blink 0.75s steps(2) infinite;
+}
+
+.parrafoPropio {
+  font-size: 2.5vw;
+  opacity: 0.4;
+  color: white;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+@keyframes write {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49.9% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Termina animacion */
+
+.btnMio, .btnMioYellow, .btnMioPink, .btnMioOrange {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 2px solid black;
+  padding: 10px 18px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.btnMioOrange {
+  background-color: orange;
+}
+
+.btnMioPink {
+  background-color: pink;
+}
+
+.btnMioYellow {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
